@@ -1,0 +1,16 @@
+{
+  "name": "yoRadio2",
+  "version": "2.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "yoRadio_ILI9341.ino.merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
