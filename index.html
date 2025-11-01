@@ -26,6 +26,12 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: inline-block;
   }
+  .logo {
+    width: 150px; /* Adjust size here */
+    height: auto;
+    border-radius: 50%; /* Makes the image a circle */
+    margin-bottom: 20px;
+  }
   .button {
     border: none;
     color: white;
@@ -58,6 +64,9 @@
 <body>
 
 <div class="container">
+  <!-- Your Logo is here -->
+  <img src="logo.png" alt="yoRadio Logo" class="logo">
+
   <h1>yoRadio Web Installer</h1>
   <p>This program was developed by <strong>Aung Moe Khine</strong>.</p>
   <p>Connect your ESP32 to your computer with a USB cable, then click the button for the desired firmware version to install. You must use a compatible browser like Google Chrome or Microsoft Edge.</p>
