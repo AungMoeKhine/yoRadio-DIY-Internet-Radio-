@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>yoRadio Web Installer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    color: #555;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 250px; /* Ensures buttons have the same width */
+  }
+  .button-v1 {
+    background-color: #4CAF50; /* Green */
+  }
+  .button-v2 {
+    background-color: #008CBA; /* Blue */
+  }
+  .button-download {
+    background-color: #555555; /* Gray */
+  }
+  .important-note {
+    font-weight: bold;
+    color: #D32F2F; /* Red */
+  }
+</style>
+<script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>yoRadio Web Installer</h1>
+  <p>This program was developed by <strong>Aung Moe Khine</strong>.</p>
+  <p>Connect your ESP32 to your computer with a USB cable, then click the button for the desired firmware version to install. You must use a compatible browser like Google Chrome or Microsoft Edge.</p>
+  <p class="important-note">Please use ESP32 CYD 2.8 inches board only</p>
+
+  <!-- Button for the first firmware version -->
+  <esp-web-install-button manifest="manifest.json">
+    <button slot="activate" class="button button-v1">Install yoRadio v1.0</button>
+  </esp-web-install-button>
+
+  <br>
+
+  <!-- Button for the second firmware version -->
+  <esp-web-install-button manifest="manifest2.json">
+    <button slot="activate" class="button button-v2">Install yoRadio v2.0</button>
+  </esp-web-install-button>
+
+  <p>
+    <a href="https://drive.google.com/drive/u/0/folders/1v75uIJ1oivk-dfcWamIqxgY9Hh-Gur66?q=sharedwith:public%20parent:1v75uIJ1oivk-dfcWamIqxgY9Hh-Gur66" class="button button-download" target="_blank">Download Required Setting Files</a>
+  </p>
+</div>
+
+</body>
+</html>
