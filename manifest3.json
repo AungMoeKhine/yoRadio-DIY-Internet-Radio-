@@ -1,0 +1,16 @@
+{
+  "name": "yoRadio3",
+  "version": "3.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "yoRadio_ST7789_DAC.ino.merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
