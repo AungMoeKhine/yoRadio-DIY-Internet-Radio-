@@ -1,0 +1,16 @@
+{
+  "name": "yoRadio4",
+  "version": "4.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "yoRadio_ILI9341_DAC.ino.merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
